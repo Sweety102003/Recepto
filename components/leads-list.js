@@ -325,7 +325,7 @@ export function LeadsList() {
 
                   <div className="flex items-center gap-2 mt-2">
                     <div
-                      className={`h-8 w-8 rounded-full flex items-center justify-center font-medium ${lead.score >= 90 ? "bg-green-500" : "bg-blue-500"} text-white`}
+                      className={`h-8 w-8 rounded-full flex items-center justify-center font-medium ${lead.score <= 80 ? "bg-green-500" : "bg-blue-500"} text-white`}
                     >
                       {lead.score}
                     </div>
